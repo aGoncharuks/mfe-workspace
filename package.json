@@ -1,0 +1,25 @@
+{
+  "name": "@mfe/root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+	"dependencies": {
+		"@mfe/authentication": "1.0.0",
+		"@mfe/utils": "1.0.0"
+	},
+	"devDependencies": {
+    "lerna": "^4.0.0"
+  },
+	"workspaces": {
+		"packages": [
+			"packages/**"
+		]
+	},
+	"scripts": {
+		"test": "lerna run test",
+		"diff": "lerna diff",
+		"version": "lerna version --conventional-commits --yes"
+	},
+	"type": "module"
+}

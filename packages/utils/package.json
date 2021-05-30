@@ -1,0 +1,12 @@
+{
+  "name": "@mfe/utils",
+  "version": "1.0.0",
+  "description": "Shared utility functions",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+	"scripts": {
+		"test": "echo testing utils library version $npm_package_version"
+	},
+	"type": "module"
+}
