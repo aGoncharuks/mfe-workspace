@@ -1,12 +1,12 @@
 {
-  "name": "@mfe/authentication",
-  "version": "1.0.0",
-  "description": "Shared authentication logic",
-  "main": "index.js",
-  "license": "MIT",
-  "private": true,
-	"scripts": {
-		"test": "echo testing authentication library version $npm_package_version"
-	},
-	"type": "module"
+ "name": "@mfe/authentication",
+ "version": "1.0.1",
+ "description": "Shared authentication logic",
+ "main": "index.js",
+ "license": "MIT",
+ "private": true,
+ "scripts": {
+  "test": "echo testing authentication library version $npm_package_version"
+ },
+ "type": "module"
 }
