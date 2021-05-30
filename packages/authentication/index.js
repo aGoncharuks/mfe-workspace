@@ -9,6 +9,6 @@ export async function tryLogin(userData) {
 	
 	return Promise.resolve({
 		username: 'My Authenticated User',
-		applications: ['mfe1']
+		applications: ['mfe1', 'mfe2']
 	});
 }
