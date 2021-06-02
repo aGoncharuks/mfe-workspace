@@ -6,7 +6,7 @@
  "license": "MIT",
  "private": true,
  "scripts": {
-  "test": "echo testing utils library version $npm_package_version"
+  "test": "echo testing utils library version %npm_package_version%"
  },
  "type": "module"
 }

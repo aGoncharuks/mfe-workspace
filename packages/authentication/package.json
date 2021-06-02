@@ -6,7 +6,8 @@
  "license": "MIT",
  "private": true,
  "scripts": {
-  "test": "echo testing authentication library version $npm_package_version"
+  "test": "echo testing authentication library version %npm_package_version%"
  },
  "type": "module"
 }
+
