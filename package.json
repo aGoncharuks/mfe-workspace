@@ -5,8 +5,8 @@
   "license": "MIT",
   "private": true,
 	"dependencies": {
-		"@mfe/authentication": "1.0.0",
-		"@mfe/utils": "1.0.0"
+		"@mfe/authentication": "1.1.0",
+		"@mfe/utils": "1.0.1"
 	},
 	"devDependencies": {
     "lerna": "^4.0.0"
