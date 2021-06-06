@@ -1,3 +1,3 @@
-import render from './bootstrap';
+import bootstrap from './bootstrap';
 
-render('app-one');
+bootstrap('appOne');

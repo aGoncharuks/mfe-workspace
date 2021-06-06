@@ -1,9 +1,12 @@
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 module.exports = {
+	output: {
+	 uniqueName: "appOne"
+	},
   mode: 'development',
   devServer: {
-    port: 8083,
+    port: 4200,
   },
   module: {
     rules: [
@@ -15,7 +18,7 @@ module.exports = {
         options: {
           presets: [
             '@babel/preset-env',
-            '@babel/preset-react',
+            ['@babel/preset-react', { "runtime": "automatic" }]
           ],
         },
       },
@@ -24,12 +27,15 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin(
       {
-        name: 'AppOne',
-        filename:
-          'remoteEntry.js',
+        name: 'appOne',
         exposes: {
           './bootstrap': './src/bootstrap.js',
         },
+				filename: "remoteEntry.js",
+				shared: {
+					"react": { singleton: true, strictVersion: true },
+					"react-dom": { singleton: true, strictVersion: true }
+				},
       }
     )
   ],
