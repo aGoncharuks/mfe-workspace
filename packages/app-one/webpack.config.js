@@ -6,7 +6,7 @@ module.exports = {
 	},
   mode: 'development',
   devServer: {
-    port: 4200,
+    port: 4100,
   },
   module: {
     rules: [
