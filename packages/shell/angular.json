@@ -39,7 +39,7 @@
 			},
 			"root": "",
 			"sourceRoot": "src",
-			"prefix": "mfe",
+			"prefix": "shell",
 			"architect": {
 				"build": {
 					"builder": "ngx-build-plus:browser",

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'shell-root',
+  selector: 'app-two-root',
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  title = 'Shell';
+  title = 'app-two';
 }
