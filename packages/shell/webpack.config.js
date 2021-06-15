@@ -24,12 +24,13 @@ module.exports = {
     new ModuleFederationPlugin({
 			remotes: {
 				"appOne": "appOne@http://localhost:4100/remoteEntry.js",
+				"appTwo": "appTwo@http://localhost:4200/remoteEntry.js",
 			},
 			shared: {
-				"@angular/core": { singleton: true, strictVersion: true },
-				"@angular/common": { singleton: true, strictVersion: true },
-				"@angular/common/http": { singleton: true, strictVersion: true },
-				"@angular/router": { singleton: true, strictVersion: true },
+				"@angular/core": { singleton: true },
+				"@angular/common": { singleton: true },
+				"@angular/common/http": { singleton: true },
+				"@angular/router": { singleton: true },
 
 				...sharedMappings.getDescriptors()
 			}

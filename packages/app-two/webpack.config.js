@@ -25,13 +25,13 @@ module.exports = {
 			name: "appTwo",
 			filename: "remoteEntry.js",
 			exposes: {
-				'./EntryModule': './src/app/app-two-entry/app-two-entry.module.ts',
+				'./entryModule': './src/app/entry/entry.module.ts',
 			},
 			shared: {
-				"@angular/core": { singleton: true, strictVersion: true },
-				"@angular/common": { singleton: true, strictVersion: true },
-				"@angular/common/http": { singleton: true, strictVersion: true },
-				"@angular/router": { singleton: true, strictVersion: true },
+				"@angular/core": { singleton: true },
+				"@angular/common": { singleton: true },
+				"@angular/common/http": { singleton: true },
+				"@angular/router": { singleton: true },
 
 				...sharedMappings.getDescriptors()
 			}

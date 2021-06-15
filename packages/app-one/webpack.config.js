@@ -2,7 +2,8 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 
 module.exports = {
 	output: {
-	 uniqueName: "appOne"
+		uniqueName: "appOne",
+		publicPath: "auto"
 	},
   mode: 'development',
   devServer: {
@@ -29,12 +30,12 @@ module.exports = {
       {
         name: 'appOne',
         exposes: {
-          './bootstrap': './src/bootstrap.js',
+          './entryModule': './src/bootstrap.js',
         },
 				filename: "remoteEntry.js",
 				shared: {
-					"react": { singleton: true, strictVersion: true },
-					"react-dom": { singleton: true, strictVersion: true }
+					"react": { singleton: true },
+					"react-dom": { singleton: true }
 				},
       }
     )
