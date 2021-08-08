@@ -1,13 +1,11 @@
-import {useState} from 'react';
+import {Counter} from './counter/Counter';
 
 function App() {
-	const [count, setCount] = useState(0);
 	
   return (
     <div className="App">
 			<div>REACT APPLICATION</div>
-			<div>Counter: {count}</div>
-			<button onClick={() => setCount(count + 1)}>Increment</button>
+			<Counter />
     </div>
   );
 }
