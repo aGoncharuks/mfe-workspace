@@ -1,4 +1,5 @@
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const path = require('path');
 
 module.exports = {
 	output: {
@@ -8,6 +9,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     port: 4100,
+		contentBase: path.join(__dirname, 'dist')
   },
   module: {
     rules: [
