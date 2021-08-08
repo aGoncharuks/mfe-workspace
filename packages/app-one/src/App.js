@@ -3,8 +3,8 @@ import {Counter} from './counter/Counter';
 function App() {
 	
   return (
-    <div className="App">
-			<div>REACT APPLICATION</div>
+    <div>
+			<div>REACT MICRO FRONTEND</div>
 			<Counter />
     </div>
   );
