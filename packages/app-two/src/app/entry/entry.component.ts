@@ -5,10 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'entry.component.html'
 })
 export class EntryComponent implements OnInit {
+	
+	value: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

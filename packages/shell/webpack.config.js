@@ -23,8 +23,8 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
 			remotes: {
-				"appOne": "appOne@http://localhost:4100/remoteEntry.js",
-				"appTwo": "appTwo@http://localhost:4200/remoteEntry.js",
+				"appOne": "appOne@http://localhost:5100/remoteEntry.js",
+				"appTwo": "appTwo@http://localhost:5200/remoteEntry.js",
 			},
 			shared: {
 				"@angular/core": { singleton: true },
